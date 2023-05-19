@@ -15,11 +15,11 @@ vector<int> fast_count_segments(vector<pair<int,int>> segments, vector<int> poin
     vector<pair<int,int>> trans;
     std::unordered_map<int, int> ans(points.size());
     for(int i=0; i <segments.size(); i++) {
-        trans.push_back(make_pair(segments[i].first, 0));
-        trans.push_back(make_pair(segments[i].second, 2));
+        trans.emplace_back(segments[i].first, 0);
+        trans.emplace_back(segments[i].second, 2);
     }
     for (int i=0; i<points.size(); i++) {
-        trans.push_back(make_pair(points[i], 1));
+        trans.emplace_back(points[i], 1);
     }
     std::sort(trans.begin(), trans.end(), [](pair<int, int>& a, pair<int, int>& b) {
         if(a.first == b.first) return a.second < b.second;
@@ -60,7 +60,7 @@ int main() {
     vector<std::pair<int,int>> segments;
     for (size_t i = 0; i < starts.size(); i++) {
         std::cin >> starts[i] >> ends[i];
-        segments.push_back(std::make_pair(starts[i], ends[i]));
+        segments.emplace_back(starts[i], ends[i]);
     }
     vector<int> points(m);
     for (size_t i = 0; i < points.size(); i++) {

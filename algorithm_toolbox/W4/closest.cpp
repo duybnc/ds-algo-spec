@@ -93,5 +93,6 @@ int main() {
     }
     sort(points.begin(), points.end(), &compareX);
     std::cout << std::fixed;
+    // need to optimize run time
     std::cout << std::setprecision(9) << minimal_distance(points, 0, points.size()-1) << "\n";
 }
