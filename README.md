@@ -9,11 +9,13 @@ Course 1: Algorithmic Toolbox
 
 Course 2: Data Structures
 
-Course 3: Algorithm on Strings
+Course 3: Algorithm on Graphs
 
-Course 4: Advanced Algorithms and Complexity
+Course 4: Algorithm on Strings
 
-Course 5: Genome Assembly Programming Challenge
+Course 5: Advanced Algorithms and Complexity
+
+Course 6: Genome Assembly Programming Challenge
 
 _Certificate_
 
